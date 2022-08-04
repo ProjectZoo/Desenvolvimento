@@ -1,0 +1,178 @@
+@font-face {
+  font-family: Ubuntu Mono;
+  src: url('../font/UbuntuMono-Bold.ttf');
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color:	#000000;
+
+}
+
+.menu{
+  background-color: rgba(0, 0, 0, 0.3);
+   padding: 2%;
+
+}
+
+
+.itens_Menu{
+  padding-top: 1%;
+  line-height: 1.5;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.itens_Menu a:visited, .itens_Menu a:link{
+  color: #fbff00;
+  text-decoration: none;
+  font-weight: bolder;
+
+}
+
+.itens_Menu a:hover{
+  background-color: rgba(9, 7, 6, 0.4);
+  padding: 0.8%;
+}
+
+.itens_Menu a:active{
+  color: black;
+}
+
+
+
+h1{
+  font-size: 2em;
+  font-family: 'Fredoka One', cursive;
+}
+
+p{
+  color: #FFD700;  
+  font-size: 1.5em;
+  line-height: 1.3;
+  text-align: justify;
+  font-family: 'UbuntuMono-Bold.ttf',cursive;
+  /* text-indent: 40px; */
+  
+  
+}
+
+h1,h2{
+    color: #0044ff;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+figure{
+    text-align: center;
+}
+.container{
+    width:70%;
+    margin: auto;
+}
+
+.img_topo{
+    width: 100%;
+}
+
+.img_corpo{
+    width: 60%;
+    margin-top: 2%;
+    margin-bottom: 2%;    
+}
+
+#mais a:link, #mais a:visited {
+  color: #adf3ff;
+}
+
+#mais a:hover{
+  color: black ;
+}
+
+footer{
+    background-color: rgba(22, 67, 214, 0.795);
+    padding: 2%;
+    margin-top: 2%;
+}
+
+footer p {
+  text-align: center;
+  font-size: 1em;
+}
+
+.botao{
+ margin: 1%;
+  width: 100px;
+  height: 30px;
+  padding: 2%;
+  background-color: rgba(#696969);
+  margin: auto;
+}
+
+.botao:hover{
+  background-color:#A9A9A9;
+}
+
+.botao a:link, .botao a:visited{
+  color:#1f138b;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.botao p{
+  text-align: center;
+}
+
+section{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.direita{
+  float: right;
+  margin-left: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 35%;
+}
+
+.esquerda{
+  float: left;
+  margin-right: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 30%;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td,th{
+  border: 2px dashed #0026ff;
+  padding: 4%;
+}
+
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+td :first-child {
+  width: 40%;
+}
+td :first-child + td {
+  width: 60%;
+}
+
+audio {
+  width: 40%;
+
+}
+audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel {
+  background-color: red;
+}
