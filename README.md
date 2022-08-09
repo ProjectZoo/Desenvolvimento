@@ -1,2 +1,2 @@
 # Meu-Primeirosiite
-https://projectzoo.github.io/meuprimeirosite/
+https://projectzoo.github.io/MwuSite/
