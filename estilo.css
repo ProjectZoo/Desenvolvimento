@@ -34,12 +34,12 @@ body{
 }
 
 .itens_Menu a:hover{
-  background-color: rgba(9, 7, 6, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 0.8%;
 }
 
 .itens_Menu a:active{
-  color: black;
+  color: rgb(255, 0, 0);
 }
 
 
@@ -151,28 +151,33 @@ section{
 table{
   width: 100%;
   border-collapse: collapse;
+  text-align: center;
+  font-family: 'UbuntuMono',cursive;
 }
 
 td,th{
-  border: 2px dashed #0026ff;
-  padding: 4%;
+  border: 2px dashed #ffffff;
+  padding: 5%;
+  color: #FFD700;
 }
 
+th{
+  font-size: 1.5em;
+  font-weight: bolder;
+  }
 
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-td :first-child {
-  width: 40%;
-}
-td :first-child + td {
-  width: 60%;
+td:first-child{
+  width: 40% ;
 }
 
-audio {
-  width: 40%;
+td:first-child + td{
+  width: 60% ;
 
 }
-audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel {
-  background-color: red;
+audio{
+  width: 85%;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #0004ff !important;
 }
