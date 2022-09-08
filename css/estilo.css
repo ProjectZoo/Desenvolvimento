@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: Ubuntu Mono;
   src: url('../font/UbuntuMono-Bold.ttf');
@@ -18,11 +19,19 @@ header{
 }
 
 header{
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+}
+
+header{
   background-color: rgba(22, 10, 6, 0.3);
   padding: 2%;
   font-family: 'Gloria Hallelujah', cursive;  
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .menu{
@@ -69,6 +78,7 @@ header{
 h1{
   font-size: 2em;
   font-family: 'Fredoka One', cursive;
+  z-index: -1000;
 }
 
 p{
@@ -91,20 +101,13 @@ h1,h2{
 
 figure{
     text-align: center;
+    
 }
 .container{
     width:70%;
     margin: auto;
 }
 
-.logo{
-  text-align: center;
-}
-
-.img_logo{
-  width: 15%;
-  margin-top: 1%;
-}
 
 .img_topo{
     width: 100%;
@@ -277,6 +280,21 @@ input[type=submit]:hover {
   .form{  
     border-radius: 50px;
   }
+
+  .logo{
+    text-align: center;
+
+}
+
+.img_logo{
+    width: 20%;
+}
+
+
+.banner{
+    margin-top: 40%;
+}
+
   
   /* Altera configuração quanod a tela está menor que 600px */
   @media screen and (max-width:600px) {
@@ -295,7 +313,32 @@ input[type=submit]:hover {
         flex-direction: row;
 
     }
-   
 
+  .itens_menu{         
+  position: absolute;
+  right: 6%;
+  top: 45%;
+  width: 70%;
+
+    }
+  .itens_menu ul li{
+      display: inline;
+      margin-left: 1%;
+
+
+  }
+   
+  .img_logo{
+    width: 30%;
+}
+
+.logo{
+    width: 30%;
+    text-align: left;
+}
+
+.banner{
+    margin-top: 10%;
+}
     
   }
