@@ -17,18 +17,35 @@ header{
   width: 100%;
 }
 
+header{
+  background-color: rgba(22, 10, 6, 0.3);
+  padding: 2%;
+  font-family: 'Gloria Hallelujah', cursive;  
+  display: flex;
+  flex-direction: column;
+}
+
 .menu{
   background-color: rgba(0, 0, 0, 0.3);
    padding: 2%;
 
 }
 
+.fixo{
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
 
 .itens_Menu{
-  padding-top: 1%;
-  line-height: 1.5;
   text-align: center;
+
+}
+
+.itens_menu li{
+
   font-size: 1.3em;
+  line-height: 1.5;
 }
 
 .itens_Menu a:visited, .itens_Menu a:link{
@@ -252,15 +269,33 @@ input[type=submit]:hover {
   font-weight: bolder;
 }
 
-@media screen and (max-width: 450px) {
-
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
+.col-25, .col-75, input[type=submit] {
+  width: 100%;
+  margin-top: 0;
+}
 
   .form{  
     border-radius: 50px;
   }
   
-}
+  /* Altera configuração quanod a tela está menor que 600px */
+  @media screen and (max-width:600px) {
+
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }    
+  }
+
+   /* Altera configuração quando a tela for maior que 601 px*/
+   @media screen and (min-width:601px) {
+
+    header{
+        background-color: rgb(0, 0, 0);
+        flex-direction: row;
+
+    }
+   
+
+    
+  }
